@@ -40,19 +40,31 @@ Features
 
 ### 1. Selecting DOM Elements
    
-`let optionsButtons = document.querySelectorAll(".options-button");
-let advancedOptionsButtons = document.querySelectorAll(".adv-option-button");
-let fontName = document.getElementById("fontName");
-let fontSizeRef = document.getElementById("fontSize");
-let writingArea = document.getElementById("text-input");
-let linkButton = document.getElementById("createLink");
-let alignButtons = document.querySelectorAll(".align");
-let spacingButtons = document.querySelectorAll(".spacing");
-let formatButtons = document.querySelectorAll(".format");
-let scriptButtons = document.querySelectorAll(".script");`
 
-**In this section of the code, various DOM elements are selected using querySelectorAll and getElementById. These elements are crucial for interacting with the user and applying formatting to the text input area.
-**
+	
+	let optionsButtons = document.querySelectorAll(".options-button");
+	
+	let advancedOptionsButtons = document.querySelectorAll(".adv-option-button");
+	
+	let fontName = document.getElementById("fontName");
+	
+	let fontSizeRef = document.getElementById("fontSize");
+	
+	let writingArea = document.getElementById("text-input");
+	
+	let linkButton = document.getElementById("createLink");
+	
+	let alignButtons = document.querySelectorAll(".align");
+	
+	let spacingButtons = document.querySelectorAll(".spacing");
+	
+	let formatButtons = document.querySelectorAll(".format");
+	
+	let scriptButtons = document.querySelectorAll(".script");
+ 
+
+#### In this section of the code, various DOM elements are selected using querySelectorAll and getElementById. These elements are crucial for interacting with the user and applying formatting to the text input area.
+
 
 ### **2. Initializing the Application**
 
@@ -88,8 +100,8 @@ let scriptButtons = document.querySelectorAll(".script");`
     fontSizeRef.value = "3";
     };
 
-**The initializer function sets up the initial state of the application. It populates the font and font size dropdowns, sets default values, and prepares the application for user interaction.
-**
+#### The initializer function sets up the initial state of the application. It populates the font and font size dropdowns, sets default values, and prepares the application for user interaction.
+
 
 **### 3. Adding Functionality to Buttons**
    
@@ -163,7 +175,7 @@ let scriptButtons = document.querySelectorAll(".script");`
 	
 	});
 
-**This section of the code handles the functionality of the buttons. It defines the modifyText function to execute commands on selected text and attaches event listeners to the buttons for different formatting options. Additionally, it allows users to insert images and create links.**
+#### This section of the code handles the functionality of the buttons. It defines the modifyText function to execute commands on selected text and attaches event listeners to the buttons for different formatting options. Additionally, it allows users to insert images and create links.**
 
 
 ### 4. Click Effect on Buttons
@@ -206,10 +218,10 @@ let scriptButtons = document.querySelectorAll(".script");`
 	window.onload = initializer();
 
 
-**In this part of the code, the highlighter function is used to provide a visual click effect on buttons. It highlights the clicked button while removing the highlight from others, ensuring that only one button (for some options) or multiple buttons (for others) can be highlighted.
-**
+#### In this part of the code, the highlighter function is used to provide a visual click effect on buttons. It highlights the clicked button while removing the highlight from others, ensuring that only one button (for some options) or multiple buttons (for others) can be highlighted.
+
 
 # Conclusion
-**The Simple Text Formatting Tool offers a range of features for users to format and style their text easily. Understanding the core code concepts explained in this documentation will enable you to extend and customize this tool according to your specific requirements. It serves as a practical example of how to create a user-friendly text formatting application using HTML, CSS and Javascript.
-**
+#### The Simple Text Formatting Tool offers a range of features for users to format and style their text easily. Understanding the core code concepts explained in this documentation will enable you to extend and customize this tool according to your specific requirements. It serves as a practical example of how to create a user-friendly text formatting application using HTML, CSS and Javascript.
+
 #### Thanks for reading this hope you learnt something 😊
