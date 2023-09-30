@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     /* This box-sizing is for when adding padding to the box it keeps 
+     the width and height of the box intact not changin its position */ 
+} 
+
+body {
+    background-color: #303234;
+}
+.container {
+    background-color:black;
+    margin-left: 3vw;
+    margin-right:3vw;
+    /* this can be used to maintain a 90% viewport of the box in repsect to the 
+    size of the web page */
+    padding: 50px 30px;
+    position: absolute;
+    /* left: 2%;
+    right: 2%; */
+    /* It gives you power for placement of the box using it with other 
+    properties like top, bottom, left, right to maintain good 
+    positioning */
+    /* transform: translate(-50%, -50px);
+    /* Keep your box thoroughly centered on the web page using it with 
+    other property like the left & top */
+    /* left: 50%;
+    top: 50%; */ 
+    /* border-radius: 10px; */
+    box-shadow: 0 25px 50px rgba(7,20,35,0.2);
+    /* This is unlike the padding 0=the opacity/blur, (-)v set the shadow toward
+    right or left using + a and - symbols to change position,
+    vice versa, rgba to change color  */
+    }
+
+.header {
+    font-size: 14px;
+    font-weight:lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#ffffff;
+    /* Making your site more Responsive This code */
+    position: absolute;
+    transform: translate(-50px);
+    left:50%;
+
+
+}
+.object{
+    display: flex;
+    background-color: #303234;
+    height: 20px;
+}
+.here > li {
+    display: inline-block;
+
+}
+/* li:last-child { 
+    margin-left: 10px;
+
+} */
+.circle1 {
+    width: 11px;
+    height: 11px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+}
+.circle2 {
+    width: 11px;
+    height: 11px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.circle3 {
+    width: 11px;
+    height: 11px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+ .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    
+ }
+ /* button */
+ button {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: black;
+    outline: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+ }
+select {
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 3px;
+}
+.option label,
+.option  select
+/* This means get the label elemnet inside an element with option class name */
+/* and another element selct inside an elemnet with the option class name */
+{
+    font-family: "Poppins", sans-serif;
+    color:black;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+input[type="color"] 
+/* this means target the input element with type color */
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* No default appearance */
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch
+/* swatch more like border */
+{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+#text-input {
+    padding: 20px;
+    border: 1px solid grey;
+    height: 100vmax;
+    margin-top:10px;
+    
+    color:#ffffff
+}
+ label {
+    color:#ffffff;
+    margin-bottom: 10px;
+ }
+ .active {
+    background-color:#303234;
+    font-weight: bold;
+ }
