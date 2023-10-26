@@ -1,4 +1,5 @@
 # Simple Text Formatting Tool Documentation
+ link to view: http://127.0.0.1:5500/Simple%20Text%20Editor/index.html
 
 
 ## Introduction
