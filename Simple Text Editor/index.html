@@ -2,130 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onel Editor</title>
-<!--fontAwesome Icons-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<!--Google Fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-<!--Styles-->
-<link rel = "stylesheet" type="text/css" href="style.css">
-<!--Javascript-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="object">
-    <ul class="here">
-        <li class="circle1"></li>
-        <li class="circle2"></li>
-        <li class="circle3"></li>
-        <li class="header"> Onel Editor...</li>
-    </ul>
+        <ul class="here">
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="header">Onel Editor...</li>
+        </ul>
     </div>
-   <div class="container">
-    <div class="options">
-        <!-- Text format -->
-       <button id="bold" class="option-button format" title="make text bold">
-        <i class="fa-solid fa-bold"></i>
-       </button>
-       <button id="italic" class="option-button format" title="make text italic">
-        <i class="fa-solid fa-italic"></i>
-       </button>
-       <button id="underline" class="option-button format" title="make text underline">
-        <i class="fa-solid fa-underline"></i>
-       </button>
-       <button id="strikethrough" class="option-button format" title="strikethrough text">
-        <i class="fa-solid fa-strikethrough"></i>
-       </button>
-       <button id="superscript" class="option-button script" title="make text superscript">
-        <i class="fa-solid fa-superscript"></i>
-       </button> 
-       <button id="subscript" class="option-button script" title="make text subscript">
-        <i class="fa-solid fa-strikethrough"></i>
-       </button>
-       
-       <!-- list -->
-       <button id="insertOrderedList" class="option-button" title="to create an ordered list">
-        <div class="fa-solid fa-list-ol"></div> 
-       </button>
-       <button id="insertUnroderedList" class="option-button" title="to create an unordered List">
-        <div class="fa-solid fa-list-ul"></div>
-       </button>
+    <div class="container">
+        <div class="options">
+            <!-- Text format -->
+            <button id="bold" class="option-button format" title="Make text bold">
+                <i class="fas fa-bold"></i> <!-- Changed 'fa-solid' to 'fas' for Font Awesome class names -->
+            </button>
+            <button id="italic" class="option-button format" title="Make text italic">
+                <i class="fas fa-italic"></i>
+            </button>
+            <button id="underline" class="option-button format" title="Make text underline">
+                <i class="fas fa-underline"></i>
+            </button>
+            <button id="strikethrough" class="option-button format" title="Strikethrough text">
+                <i class="fas fa-strikethrough"></i>
+            </button>
+            <button id="superscript" class="option-button script" title="Make text superscript">
+                <i class="fas fa-superscript"></i>
+            </button> 
+            <button id="subscript" class="option-button script" title="Make text subscript">
+                <i class="fas fa-subscript"></i> <!-- Corrected 'fa-strikethrough' to 'fa-subscript' -->
+            </button>
+            
+            <!-- List -->
+            <button id="insertOrderedList" class="option-button" title="To create an ordered list">
+                <i class="fas fa-list-ol"></i> <!-- Corrected 'fa-solid' to 'fas' for Font Awesome class name -->
+            </button>
+            <button id="insertUnorderedList" class="option-button" title="To create an unordered list">
+                <i class="fas fa-list-ul"></i>
+            </button>
 
-       <!-- Undo/Redo -->
-       <button id="undo" class="option-button" title="create an undo button">
-        <div class="fa-solid fa-rotate-left"></div>
-       </button>
-       <button id="redo" class="option-button" title="create an redo button">
-        <div class="fa-solid fa-rotate-right"></div>
-       </button>
+            <!-- Undo/Redo -->
+            <button id="undo" class="option-button" title="Undo">
+                <i class="fas fa-undo"></i> <!-- Changed 'fa-rotate-left' to 'fa-undo' -->
+            </button>
+            <button id="redo" class="option-button" title="Redo">
+                <i class="fas fa-redo"></i> <!-- Changed 'fa-rotate-right' to 'fa-redo' -->
+            </button>
 
-       <!-- image -->
+            <!-- Image -->
+            <button id="insertImage">Insert Image</button>
 
-       <button id="insertImage">Insert Image</button>
+            <!-- Links -->
+            <button id="createLink" class="adv-option-button" title="Make link">
+                <i class="fa fa-link"></i>
+            </button>
+            <button id="unlink" class="option-button" title="Remove link">
+                <i class="fa fa-unlink"></i>
+            </button>
 
-         <!-- links -->
-       <button id="createLink" class="adv-option-button" title="make link">
-        <i class="fa fa-link"></i>
-       </button>
-       <button id="unlink" class="option-button" title="make unlink">
-        <i class="fa fa-unlink"></i>
-       </button>
+            <!-- Alignment -->
+            <button id="justifyLeft" class="option-button align" title="Align content left">
+                <i class="fas fa-align-left"></i>
+            </button>
+            <button id="justifyCenter" class="option-button align" title="Center content">
+                <i class="fas fa-align-center"></i>
+            </button>
+            <button id="justifyRight" class="option-button align" title="Align content right">
+                <i class="fas fa-align-right"></i>
+            </button>
+            <button id="justifyFull" class="option-button align" title="Justify content">
+                <i class="fas fa-align-justify"></i>
+            </button>
+            <button id="indent" class="option-button spacing" title="Indent text">
+                <i class="fas fa-indent"></i>
+            </button>
+            <button id="outdent" class="option-button spacing" title="Outdent text">
+                <i class="fas fa-outdent"></i>
+            </button>
+            
+            <!-- Headings -->
+            <select id="formatBlock" class="adv-option-button" title="Change header">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+            </select>
 
-       <!-- Alignment -->
-       <button id="justifyLeft" class="option-button align" title="justify content left">
-        <i class="fa-solid fa-align-left"></i>
-       </button>
-       <button id="justifyCenter" class="option-button align" title="justify content center">
-        <i class="fa-solid fa-align-center"></i>
-       </button>
-       <button id="justifyRight" class="option-button align" title="justify content right">
-        <i class="fa-solid fa-align-right"></i>
-        </button>
-        <button id="justifyFull" class="option-button align" title="justify content full">
-            <i class="fa-solid fa-align-justify"></i>
-        </button>
-        <button id="indent" class="option-button spacing" title="indent text">
-            <i class="fa-solid fa-indent"></i>
-        </button>
-        <button id="outdent" class="option-button spacing" title="outdent text">
-            <i class="fa-solid fa-outdent"></i>
-        </button>
-        
-        <!-- Headings -->
-        <select id="formatBlock" class="adv-option-button" title="change header">
-            <option value="H1">H1</option>
-            <option value="H2">H2</option>
-            <option value="H3">H3</option>
-            <option value="H4">H4</option>
-            <option value="H5">H5</option>
-            <option value="H6">H6</option>
-        </select>
+            <!-- Font -->
+            <select id="fontName" class="adv-option-button" title="Select font name"></select>
+            <select id="fontSize" class="adv-option-button" title="Select font size"></select>
 
-        <!-- Font -->
-        <select id="fontName" class="adv-option-button" title="select fontName"></select>
-        <select id="fontSize" class="adv-option-button" title="select fontSize"></select>
-
-        <!-- color -->
-    <div class="input-wrapper">
-        <div>
-            <input type="color" id="foreColor" class="adv-option-button" title="select font-color">
-            <label for="Forecolor">Font Color</label>
+            <!-- Color -->
+            <div class="input-wrapper">
+                <div>
+                    <input type="color" id="foreColor" class="adv-option-button" title="Select font color">
+                    <label for="foreColor">Font Color</label>
+                </div>
+                <div>
+                    <input type="color" id="backColor" class="adv-option-button" title="Select Highlight color">
+                    <label for="backColor">Highlight Color</label>
+                </div>
+            </div>
         </div>
-        <div>
-            <input type="color" id="backColor" class="adv-option-button" title="select Highlight color">
-            <label for="backcolor">Highlight Color</label>
+        <div id="text-input" contenteditable="true">
+            <!-- Contenteditable allows users to edit its content directly on the webpage -->
         </div>
-       
+        <script src="script.js"></script>
     </div>
-    
-   </div>
-   <div id="text-input" contenteditable="true">
-    <!-- contenteditable allow users to edit its content directly on the webpage -->
-</div>
-<script src="script.js"></script>
 </body>
 </html>
