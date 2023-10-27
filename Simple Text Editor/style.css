@@ -162,3 +162,6 @@ input[type="color"]::-moz-color-swatch {
     background-color:#303234;
     font-weight: bold;
  }
+ a {
+    cursor: pointer;
+  }

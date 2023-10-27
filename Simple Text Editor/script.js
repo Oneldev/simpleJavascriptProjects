@@ -3,12 +3,13 @@ let optionsButtons = document.querySelectorAll(".option-button");
 let advancedOptionButton = document.querySelectorAll(".adv-option-button");
 let fontName = document.getElementById("fontName");
 let fontSizeRef = document.getElementById("fontSize");
-let writingArea = document.getElementById("text-input");
+let textInput = document.getElementById("text-input");
 let linkButton = document.getElementById("createLink");
 let alignButtons = document.querySelectorAll(".align");
 let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
 let scriptButtons = document.querySelectorAll(".script");
+let outputDiv = document.getElementById("output");
 
 // list of fontList
 // creating an Array to store all fonts
@@ -102,6 +103,30 @@ linkButton.addEventListener("click", () => {
   }
 });
 
+
+// Function to add click event to the generated links
+function makeLinksClickable() {
+    let links = textInput.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = link.getAttribute('href');
+        if (url && url.startsWith("http")) {
+          window.open(url, '_blank');
+        }
+      });
+    });
+  }
+  
+  // Event listener for when the content-editable area changes
+  textInput.addEventListener("input", function () {
+    // Get the text from the content-editable area
+    let text = textInput.innerHTML;
+  
+    // Make the generated links clickable
+    makeLinksClickable();
+  });
+  
 // click effect on buttons !!!!!!!!!!!!!!!!!!!!!!
 // Highlight clicked butom
 const highlighter = (className, needsRemoval) => {
