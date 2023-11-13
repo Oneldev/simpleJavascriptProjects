@@ -1,5 +1,5 @@
 # Online Shopping page
-
+link to view:  https://shopping-page2.vercel.app/
 
 This project is a **simple online shopping page** that allows users to browse through products, add items to their cart, and view additional details about each product. The website is designed with HTML for structure, SASS for styling, and vanilla JavaScript for dynamic functionality.
 
