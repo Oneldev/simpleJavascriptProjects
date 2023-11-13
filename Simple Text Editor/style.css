@@ -11,8 +11,8 @@ body {
 }
 .container {
     background-color:black;
-    margin-left: 3vw;
-    margin-right:3vw;
+    margin-left:  3vw;
+    margin-right: 3vw;
     /* this can be used to maintain a 90% viewport of the box in repsect to the 
     size of the web page */
     padding: 50px 30px;
@@ -43,6 +43,7 @@ body {
     position: absolute;
     transform: translate(-50px);
     left:50%;
+    
 
 
 }

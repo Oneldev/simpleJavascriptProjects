@@ -1,0 +1,103 @@
+
+    .product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header-products {
+        font-weight: 400;
+        font-family: 'Lexend' sans-serif;
+        font-size: 30px;
+        line-height: 89.1%;
+        color: #FFFFFF;
+        text-align: center;
+        text-shadow:
+        1px 1px 0 #000; /* stroke effetcts */
+        margin-top: 100px;
+        height: 25px;
+        
+        
+        }
+
+        .nav-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        
+
+        .sub-nav {
+                
+                
+            a {
+                text-decoration: none;
+                color:#FFFFFF;
+                font-family: 'Lexend' sans-serif;
+                font-weight:400;
+                text-align: center;
+                font-size: 100%;
+                width: auto;
+                justify-content: space-between;
+              
+            }
+            @media (max-width: 320px){
+              .sub-nav {
+                a {
+                  font-size: 2px;
+                }
+              }
+            } 
+            a:hover {
+                color: #FF10F5
+
+            }
+        }
+        .sub-nav a.active {
+            background-color: #241E1E; /* Change this to the desired active link style */
+            color: #FF10F5; /* Change this to the desired active link text color */
+        }
+    }
+
+    .recent-container {
+        justify-content: center;
+        align-items: flex-start;
+        display: flex;
+        gap: 8px;
+        margin-top: 50px;
+      }
+    
+      @media (max-width: 991px) {
+        .recent-container {
+          flex-wrap: wrap;
+        }
+      }
+    
+      .image-wrapper1 {
+        background-color: #fff;
+        align-self: stretch;
+        width: 100px;
+        height: 4px;
+        margin: auto 0;
+        padding: auto 0;
+      }
+      .image-wrapper2 {
+        background-color: #fff;
+        align-self: stretch;
+        width: 100px;
+        height: 4px;
+        margin: auto 0;
+        padding-left: 10px;
+    
+      }
+    
+      .title {
+        color: #fff;
+        align-self: center;
+        width: auto;
+        font: 400 15px/120% Lexend, sans-serif;
+        margin: auto 0px;
+      }
+
+
+ 

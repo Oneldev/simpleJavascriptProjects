@@ -1,0 +1,4 @@
+#ignore Documentation from internal folder directory
+/node_modules/
+# ignore json files 
+*.json
