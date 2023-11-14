@@ -1,9 +1,0 @@
-.head {
-    font-size: 30px;
-    font-weight:lighter;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:#ffffff;
-    background-color:aqua;
-    display: flex;
-    justify-content: end;
-}
