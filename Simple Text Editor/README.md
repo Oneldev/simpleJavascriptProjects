@@ -1,4 +1,5 @@
 # Onel Editor
+Link to view: https://text-editor-sigma.vercel.app/
 
 Onel Editor is a feature-rich web-based text editor that allows users to enhance and format text content on web pages. It provides a user-friendly interface with various text formatting options.
 
